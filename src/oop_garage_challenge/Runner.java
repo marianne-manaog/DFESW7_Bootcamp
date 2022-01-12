@@ -54,7 +54,20 @@ public class Runner {
 		garage.fix(car, 5);
 		garage.fix(car2, 3);
 		
+		System.out.println("\n---6th Garage List---\n");
+		garage.addVehicle(boat);
+		garage.addVehicle(boat2);
+		garage.printGarage();
 		
+		garage.removeByIDNumber("101");
+		garage.printGarage();
+		
+		System.out.println("\n---7th Garage List---\n");
+		garage.addVehicle(car2);
+		garage.printGarage();
+		
+		garage.removeByName("Carol");
+		garage.printGarage();
 		
 		
 		

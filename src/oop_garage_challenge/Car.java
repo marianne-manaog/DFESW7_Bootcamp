@@ -2,20 +2,16 @@ package oop_garage_challenge;
 
 public class Car extends Vehicle {
 
-	
-	
 	// fields
-		private String IDNumber;
-		private boolean haveAirbags;
+	private String IDNumber;
+	private boolean haveAirbags;
 	
-	
-	
-
-	public Car(String name, String iDNumber, String vehicleType, int numberOfWheels) {
-			super(name, iDNumber, vehicleType, numberOfWheels);
+	// constructor
+	public Car(String name, String IDNumber, String vehicleType, int numberOfWheels) {
+		super(name, IDNumber, vehicleType, numberOfWheels);
+	}	
 		
-		}
-
+	// methods
 	public String getName() {
 		return name;
 	}

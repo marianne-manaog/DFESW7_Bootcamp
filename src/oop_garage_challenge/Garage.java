@@ -63,8 +63,32 @@ public class Garage {
 		this.listOfVehicle.clear();
 	}
 	
-	public List<Vehicle> modifiedListOfVehicle = new ArrayList<>();
+	public void removeByIDNumber(String y) {
+//		 make a clone of the list and iterate through the clone while modifying 
+//		the original list by removing vehicle of type v
+		for (Vehicle v : new ArrayList<Vehicle>(listOfVehicle)) {
+			if (v.getIDNumber().equals(y)) {
+				System.out.println("y is: " + y);
+				System.out.println("v.getIDNumber() is: " + v.getIDNumber());
+				listOfVehicle.remove(v);
+			}
+		}
+	}
 	
+	
+	public void removeByName(String y) {
+//		 make a clone of the list and iterate through the clone while modifying 
+//		the original list by removing vehicle of type v
+		for (Vehicle v : new ArrayList<Vehicle>(listOfVehicle)) {
+			if (v.getName().equals(y)) {
+				System.out.println("y is: " + y);
+				System.out.println("v.getName() is: " + v.getName());
+				listOfVehicle.remove(v);
+			}
+		}
+	}
+	
+
 	public void removeByType(String y) {
 //		 make a clone of the list and iterate through the clone while modifying 
 //		the original list by removing vehicle of type v
@@ -78,5 +102,5 @@ public class Garage {
 	}
 
 	
-	
+	// v.getIDNumber().equals()
 }

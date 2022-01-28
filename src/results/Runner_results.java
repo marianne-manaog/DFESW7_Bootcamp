@@ -7,8 +7,8 @@ public class Runner_results {
 		Results results = new Results();
 		
 		results.physicsScore = 150;
-		results.chemistryScore = 140;
-		results.biologyScore = 130;
+		results.chemistryScore = 150;
+		results.biologyScore = 150;
 		
 		results.displayResults();
 		results.displayPercentage();
